@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import ChatBot from "./chatbot";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-gradient-to-br from-lime-400 to-purple-400 dark:from-red-200 h-screen">
+       <h1 className="text-4xl font-bold text-green-700 text-center font-serif pt-6 "> Green bot</h1>
+        <div className="flex justify-center mt-10 ">
+          <ChatBot />
+        </div>
     </div>
   );
 }
